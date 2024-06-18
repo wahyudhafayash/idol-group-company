@@ -9,7 +9,7 @@ const CarouselComponent = () => {
       onPointerLeaveCapture={undefined}
     >
       <Image width={800} height={800} src={"/voucher1.png"} alt="voucer1" />
-      <Image width={800} height={800} src={"/voucher1.png"} alt="voucer1" />
+      <Image width={800} height={800} src={"/voucher2.png"} alt="voucer1" />
       <Image width={800} height={800} src={"/voucher1.png"} alt="voucer1" />
     </Carousel>
   );

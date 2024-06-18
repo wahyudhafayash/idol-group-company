@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </section>
       {/* Company Overview */}
-      <section className="w-full h-full flex justify-center items-center text-purple-100 bg-purple-600 p-16">
+      <section className="w-full h-full flex justify-center items-center text-purple-100 bg-[#8e24aa] p-16">
         <div className="flex flex-col justify-center items-left py-10 gap-10">
           <Fade cascade triggerOnce={true} direction="left" duration={300}>
             <div>
@@ -164,7 +164,7 @@ const Home = () => {
               <h1 className="text-4xl text-purple-900">TESTIMONI</h1>
             </div>
             <div className="grid grid-cols-4 pt-10 justify-center items-center gap-10">
-              <div className="border-2 rounded-xl border-purple-600 shadow-inner shadow-purple-100 bg-purple-600 flex gap-4 w-80 h-48 p-8 pt-8">
+              <div className="border-2 rounded-xl border-purple-600 shadow-inner shadow-purple-100 bg-[#8e24aa] flex gap-4 w-80 h-48 p-8 pt-8">
                 <div className="flex gap-4 ">
                   <img
                     className="w-10 h-10 rounded-xl shadow-2xl"

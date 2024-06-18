@@ -1,7 +1,7 @@
 "use client";
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 px-8 py-4 flex justify-between items-center  backdrop-blur-sm z-50 ">
+    <nav className="fixed top-0 left-0 right-0 px-8 py-4 flex justify-between items-center backdrop-blur-sm z-50 ">
       <a className="text-white font-bold text-4xl" href="/">
         MDN48
       </a>
