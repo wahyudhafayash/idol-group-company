@@ -3,7 +3,7 @@ import Image from "next/image";
 const CarouselComponent = () => {
   return (
     <Carousel
-      className="rounded-xl w-[800px] h-auto"
+      className="rounded-xl w-[650px] h-auto"
       placeholder={undefined}
       onPointerEnterCapture={undefined}
       onPointerLeaveCapture={undefined}
