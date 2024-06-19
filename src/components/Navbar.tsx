@@ -1,41 +1,91 @@
+// components/Navbar.js
 "use client";
-const Navbar = () => {
-  return (
-    <nav className="fixed top-0 left-0 right-0 px-8 py-4 flex justify-between items-center backdrop-blur-sm z-50 ">
-      <a className="text-white font-bold text-4xl" href="/">
-        MDN48
-      </a>
 
-      <div>
-        <ul className="flex gap-6 pr-8 ">
-          <li>
-            <a className="text-white  text-1xl" href="/">
+import { useState } from "react";
+import { IconButton } from "@mui/material";
+// import MenuIcon from "@mui/icons-material/Menu";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="bg-slate-800 p-4 fixed w-full z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="flex-shrink-0">
+          <a
+            href="/"
+            className="text-white text-4xl font-bold hover:text-purple-600"
+          >
+            MDN48
+          </a>
+        </div>
+        <div className="block lg:hidden">
+          <IconButton
+            onClick={toggleMenu}
+            className="text-white focus:outline-none focus:bg-gray-700"
+          >
+            {/* <MenuIcon /> */}
+          </IconButton>
+        </div>
+        <div className="hidden lg:flex lg:items-center lg:w-auto">
+          <div className="text-xl lg:flex-grow">
+            <a
+              href="/"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-purple-600 mr-4"
+            >
               Home
             </a>
-          </li>
-
-          <li>
-            <a className="text-white  text-1xl" href="/aboutus">
-              AboutUs
+            <a
+              href="/aboutus"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-purple-600 mr-4"
+            >
+              About Us
             </a>
-          </li>
-          <li>
-            <a className="text-white  text-1xl" href="/theater">
-              Theater
-            </a>
-          </li>
-          <li>
-            <a className="text-white  text-1xl" href="/product">
+            <a
+              href="/product"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-purple-600 mr-4"
+            >
               Product
             </a>
-          </li>
-          <li>
-            <a className="text-white  text-1xl" href="/teams">
+            <a
+              href="/teams"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-purple-600"
+            >
               Teams
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="lg:hidden mt-4">
+          <a href="/" className="block mt-2 text-white hover:text-purple-600">
+            Home
+          </a>
+          <a
+            href="/aboutus"
+            className="block mt-2 text-white hover:text-purple-600"
+          >
+            About Us
+          </a>
+          <a
+            href="/product"
+            className="block mt-2 text-white hover:text-purple-600 mr-4"
+          >
+            Product
+          </a>
+          <a
+            href="/teams"
+            className="block mt-2 text-white hover:text-purple-600"
+          >
+            Teams
+          </a>
+        </div>
+      )}
     </nav>
   );
 };

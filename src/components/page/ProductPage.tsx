@@ -1,434 +1,483 @@
 "use client";
-import { Fade } from "react-awesome-reveal";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Image from "next/image";
 
 const ProductPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
+
   return (
     <main className="w-full h-full flex justify-center items-center bg-purple-200">
-      <div className=" flex flex-col justify-center items-center font-bold py-20">
+      <div className="max-w-7xl w-full mx-auto flex flex-col justify-center items-center font-bold py-20 px-8 md:px-16 lg:px-24">
         <h1 className="text-5xl pb-6 text-purple-900">Lihat Produk Kami</h1>
-        <div className="grid grid-cols-3 gap-20 pt-10">
-          <Fade triggerOnce={true} direction="left">
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/1.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">Landyard</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/3.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
+            <h2 className="text-purple-100">MDN48 T-shirt</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-once
+            className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 flex flex-col justify-center items-center p-4 md:p-8"
+          >
+            <div className="w-52 h-52 md:w-80 md:h-80 relative">
+              <Image
+                src="/2.png"
+                alt="merch1"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
             </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-            <div className="border-2 rounded-xl border-purple-900 bg-purple-600 gap-4 w-80 h-96 flex flex-col justify-center items-center p-8 pt-8">
-              <img
-                className="w-auto h-auto rounded-xl shadow-2xl"
-                src="https://pbs.twimg.com/media/Fm45E3tagAAV_NO.jpg"
-                alt=""
-              />
-              <h2 className="text-purple-100">Fiony BDay T-shirt</h2>
-              <button
-                onClick={() => alert("Coming Soon")}
-                className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl"
-              >
-                BELI SEKARANG
-              </button>
-            </div>
-          </Fade>
+            <h2 className="text-purple-100">LightStick</h2>
+            <button
+              onClick={() => alert("Coming Soon")}
+              className="border-2 border-purple-900 bg-purple-200 text-purple-900 px-4 py-2 rounded-lg shadow-xl mt-4"
+            >
+              BELI SEKARANG
+            </button>
+          </div>
         </div>
       </div>
     </main>
