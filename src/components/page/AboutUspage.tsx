@@ -1,5 +1,3 @@
-"use client";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -10,6 +8,7 @@ const About = () => {
       duration: 1200,
     });
   }, []);
+
   return (
     <main className="m-0 h-full flex flex-col justify-center items-center">
       <section className="w-full h-full flex justify-center items-center text-white bg-purple-400 p-2 md:p-10 lg:p-16">
@@ -27,9 +26,9 @@ const About = () => {
               <ul className="list-disc list-inside text-xl">
                 <li>MDN48 didirikan pada tahun 2024 di Medan, Indonesia.</li>
                 <li>
-                  Grup ini diinspirasi oleh konsep "idola yang bisa bertemu
-                  langsung" yang populer di Jepang dan diadaptasi untuk pasar
-                  Indonesia.
+                  Grup ini diinspirasi oleh konsep &quot;idola yang bisa bertemu
+                  langsung&quot; yang populer di Jepang dan diadaptasi untuk
+                  pasar Indonesia.
                 </li>
               </ul>
             </div>

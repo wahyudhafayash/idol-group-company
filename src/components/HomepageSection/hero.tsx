@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const Hero = () => {
   return (
     <section className="w-full min-h-screen flex justify-center py-20 md:py-24 bg-purple-200">
@@ -10,8 +11,8 @@ const Hero = () => {
           <p className="text-base md:text-lg lg:text-xl text-purple-900 text-left lg:text-justify">
             MDN48 adalah grup idola asal Indonesia yang merupakan bagian dari
             waralaba AKB48 dari Jepang. Mereka didirikan pada tahun 2024 di
-            Medan dengan konsep "idola yang bisa bertemu langsung". Seperti
-            grup-grup AKB48 lainnya, MDN48 memiliki teater di mana
+            Medan dengan konsep &quot;idola yang bisa bertemu langsung&quot;.
+            Seperti grup-grup AKB48 lainnya, MDN48 memiliki teater di mana
             anggota-anggota mereka tampil secara rutin. Mereka terbagi dalam
             beberapa tim, seperti Team M, Team D, dan Team N, serta memiliki
             sistem trainee untuk anggota yang sedang dalam masa pelatihan
