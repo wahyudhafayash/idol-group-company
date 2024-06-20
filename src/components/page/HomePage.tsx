@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <main className="w-full">
       {/* Hero Section */}
       <Hero />
       {/* Company Overview */}

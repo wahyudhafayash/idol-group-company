@@ -1,5 +1,4 @@
-import CarouselComponent from "../Carousel";
-
+import Image from "next/image";
 const Hero = () => {
   return (
     <section className="w-full min-h-screen flex justify-center py-20 md:py-24 bg-purple-200">
@@ -20,8 +19,14 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2">
-          <CarouselComponent />
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <Image
+            src="/voucher2af.png"
+            alt="image"
+            width={700}
+            height={700}
+            className="rounded-lg"
+          />
         </div>
       </div>
     </section>
