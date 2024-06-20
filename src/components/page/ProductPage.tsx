@@ -14,7 +14,13 @@ const ProductPage = () => {
   return (
     <main className="w-full h-full flex justify-center items-center bg-purple-200">
       <div className="max-w-7xl w-full mx-auto flex flex-col justify-center items-center font-bold py-20 px-8 md:px-16 lg:px-24">
-        <h1 className="text-5xl pb-6 text-purple-900">Lihat Produk Kami</h1>
+        <h1
+          data-aos="zoom-out"
+          data-aos-once
+          className="text-5xl pb-10 text-purple-900"
+        >
+          Lihat Produk Kami
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
           <div
             data-aos="fade-right"

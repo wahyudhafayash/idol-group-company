@@ -4,7 +4,11 @@ const Hero = () => {
   return (
     <section className="w-full min-h-screen flex justify-center py-20 md:py-24 bg-purple-200">
       <div className="flex flex-col justify-center items-center px-6 md:px-12 lg:px-32 gap-12 md:flex-row lg:flex-row w-full max-w-7xl">
-        <div className="w-full md:w-1/2">
+        <div
+          data-aos="fade-down-right"
+          data-aos-once
+          className="w-full md:w-1/2"
+        >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-900 mb-4 md:mb-8">
             Ayo Saksikan <span className="text-purple-500">Theater</span> Kami!
           </h1>
@@ -20,12 +24,17 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div
+          data-aos="fade-up-left"
+          data-aos-once
+          className="w-full md:w-1/2 flex justify-center items-center"
+        >
           <Image
             src="/voucher2af.png"
             alt="image"
             width={700}
             height={700}
+            layout="responsive" // Atau layout="fill" tergantung kebutuhan Anda
             className="rounded-lg"
           />
         </div>

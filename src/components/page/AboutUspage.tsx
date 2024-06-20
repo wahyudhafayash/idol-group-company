@@ -1,3 +1,5 @@
+"use client";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -5,7 +7,7 @@ import { useEffect } from "react";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 800,
     });
   }, []);
 
@@ -22,8 +24,18 @@ const About = () => {
           </div>
           <div className="flex flex-col gap-10 px-4">
             <div>
-              <h2 className="text-2xl font-bold">Sejarah Pembentukan:</h2>
-              <ul className="list-disc list-inside text-xl">
+              <h2
+                data-aos="fade-right"
+                data-aos-once
+                className="text-2xl font-bold"
+              >
+                Sejarah Pembentukan:
+              </h2>
+              <ul
+                data-aos="fade-left"
+                data-aos-once
+                className="list-disc list-inside text-xl"
+              >
                 <li>MDN48 didirikan pada tahun 2024 di Medan, Indonesia.</li>
                 <li>
                   Grup ini diinspirasi oleh konsep &quot;idola yang bisa bertemu
@@ -33,8 +45,18 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Manajemen dan Struktur:</h2>
-              <ul className="list-disc list-inside text-xl">
+              <h2
+                data-aos="fade-right"
+                data-aos-once
+                className="text-2xl font-bold"
+              >
+                Manajemen dan Struktur:
+              </h2>
+              <ul
+                data-aos="fade-left"
+                data-aos-once
+                className="list-disc list-inside text-xl"
+              >
                 <li>MDN48 dikelola oleh PT. Sehat Jaya Sejahtera.</li>
                 <li>
                   Mereka beroperasi di bawah lisensi dari AKS Co., Ltd.,
@@ -43,8 +65,18 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Sistem dan Kegiatan:</h2>
-              <ul className="list-disc list-inside text-xl">
+              <h2
+                data-aos="fade-right"
+                data-aos-once
+                className="text-2xl font-bold"
+              >
+                Sistem dan Kegiatan:
+              </h2>
+              <ul
+                data-aos="fade-left"
+                data-aos-once
+                className="list-disc list-inside text-xl"
+              >
                 <li>
                   Mirip dengan grup AKB48 lainnya, MDN48 memiliki teater di mana
                   para anggota tampil secara rutin.
@@ -57,8 +89,18 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Populeritas dan Pengaruh:</h2>
-              <ul className="list-disc list-inside text-xl">
+              <h2
+                data-aos="fade-right"
+                data-aos-once
+                className="text-2xl font-bold"
+              >
+                Populeritas dan Pengaruh:
+              </h2>
+              <ul
+                data-aos="fade-left"
+                data-aos-once
+                className="list-disc list-inside text-xl"
+              >
                 <li>
                   MDN48 telah menjadi sangat populer di Indonesia dan memiliki
                   penggemar yang besar di Asia Tenggara.
@@ -71,8 +113,18 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Dampak Budaya:</h2>
-              <ul className="list-disc list-inside text-xl">
+              <h2
+                data-aos="fade-right"
+                data-aos-once
+                className="text-2xl font-bold"
+              >
+                Dampak Budaya:
+              </h2>
+              <ul
+                data-aos="fade-rleft"
+                data-aos-once
+                className="list-disc list-inside text-xl"
+              >
                 <li>
                   Grup ini berperan penting dalam mempromosikan budaya pop
                   Jepang (J-pop) di Indonesia dan membentuk budaya penggemar
